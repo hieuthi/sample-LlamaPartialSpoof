@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html><head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8CK02G9MB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V8CK02G9MB');
+    </script>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Speech Samples of LlamaPartialSpoof Dataset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+      table {
+        border: None;
+        border-bottom: solid 3px #000;
+        border-top: solid 3px #000;
+        border-right: solid 3px #000;
+        border-left: solid 3px #000;
+      }
+      table td,
+      table th
+      {
+        text-align:left;
+        padding: 4px 4px;
+      }
+      .play-btn {
+        padding: 4px 16px;
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 2px;
+        color: #000;
+        margin: 0px;
+      }
+      .play-btn:hover {
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+      }
+      .play-btn.playing{
+        color: #000 !important;
+        background-color: #FF7F0E;
+
+      }
+      td {
+        border: none;
+      }
+
+      th {
+        border: None;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+
+      .overflow {
+        text-align: center;
+        color: #fff;
+        background-color: #000;
+        border: solid 1px #000;
+      }
+      .sample-entry {
+        margin-top: 16px;
+      }
+
+      .textboard {
+        font-family:'Lucida Console', monospace;
+        word-wrap: break-word;
+        margin-bottom: 8px;
+        font-size: 8px;
+      }
+      .textboard p{
+        margin: 0;
+        color: orange;
+      }
+      .highlight {
+        color: blue;
+      }
+
+    </style>
+    <script>
+
+</script>
+    <script type="text/javascript">
+      function play(audioElement){
+        audioElement.play();
+        audioElement.parentElement.classList.add("playing");
+
+      }
+
+      function onEnd(audioElement){
+        audioElement.parentElement.classList.remove("playing");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-md-12">
+        <row>
+          <h1>Speech Samples for <b>LlamaPartialSpoof</b> Dataset</h1>
+          <h4><a href="https://github.com/hieuthi/LlamaPartialSpoof">🏠 Project Homepage</a> | 📄 Preprint (coming soon)</h4>
+        </row>
+      </div>
+      <div class="col-md-12">
+
+      <h2>Fully and partially fake speech generated with text-to-speech systems</h2>
+      <p>We use 3-7 seconds (or five utterances) of the target speaker to clone their voice, then generate fully fake utterances. Partially fake utterances were created by combining the bona fide and the fully fake.
+      <p><sup>a</sup><b>LJ JET</b> is not a voice-cloning system but a single-speaker TTS model with the voice of a female speaker. </p>
+      <div class="row">
+        <div class="col-md-6 sample-entry">
+          <p></p>
+          <div class="textboard" width=100%>
+            <p><b>SOURCE:</b>
+            <p>•VILLEFORT•CONTINUED•HE•KNOWS•ME••AND•I•••HAVE•PLEDGED•MY•WORD•TO•HIM•
+            <p><b class=highlight>TARGET:</b>
+            <p>•VILLEFORT•CONTINUED•HE•KNOWS•<span class=highlight>HER</span>•AND•<span class=highlight>SHE•HAS</span>••PLEDGED•MY•WORD•TO•HIM•
+          </div>
+          <table border="1">
+            <tbody><tr>
+              <th style="width: 120px; font-weight: normal">Female (84)</th>
+              <th style="background-color: #FF7F0E; text-align: center; border-left: solid 1px">Fully Fake</th>
+              <th style="background-color: #FF7F0E; text-align: center; border-left: solid 1px;" colspan="3">Partially Fake</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center; border-left: solid 1px"></td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center; border-left: solid 1px;">Crossfade</td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center;">Cut/Paste</td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center;">Overlap/Add</td>
+            </tr>
+            <tr>
+              <th style="border: solid 1px; text-align:center; padding-right:8px;">Bona fide</th> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"><a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev-clean_84_121123_000050_000005.wav"></audio>► Play</a> <span style="font-size:8px; font-family: Monaco, monospace;"> 84_121123_000050_000005.wav</span></td>
+            </tr>
+
+            <tr>
+              <th class="overflow">LJ JET<sup>a</sup></th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-full_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cf_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cp_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-oa_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="overflow">YourTTS</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-full_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-cf_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-cp_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-oa_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">XTTS v2</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-full_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-cf_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-cp_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-oa_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="overflow">GPT-SoVITS</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-full_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-cf_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-cp_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-oa_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">Cosy Voice</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-full_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-cf_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-cp_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-oa_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">ElevenLab</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-full_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-cf_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-cp_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-oa_84_121123_000050_000005.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+          </tbody></table>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-6 sample-entry">
+          <p></p>
+          <div class="textboard" width=100%>
+            <p><b>SOURCE:</b>
+            <p>•THE•POINT•OF•VIEW•IN•WHICH•THIS•TALE•COMES•UNDER•THE•ROMANTIC•DEFINITION•LIES•IN•THE•ATTEMPT•TO•CONNECT••••A•BYGONE•TIME•WITH•THE•VERY•••••PRESENT•THAT•IS•FLITTING•AWAY•••••FROM•US•
+            <p><b class=highlight>TARGET:</b>
+            <p>•THE•POINT•OF•VIEW•IN•WHICH•THIS•TALE•COMES•UNDER•THE•<span class=highlight>REALIST</span>••DEFINITION•LIES•IN•THE•ATTEMPT•TO•<span class=highlight>DISCONNECT</span>•A•BYGONE•TIME•FROM•THE•<span class=highlight>STAGNANT•PAST</span>••••THAT•IS••••••••••<span class=highlight>STICKING•WITH</span>•US•
+          </div>
+          <table border="1">
+            <tbody><tr>
+              <th style="width: 120px; font-weight: normal">Male (2086)</th>
+              <th style="background-color: #FF7F0E; text-align: center; border-left: solid 1px">Fully Fake</th>
+              <th style="background-color: #FF7F0E; text-align: center; border-left: solid 1px;" colspan="3">Partially Fake</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center; border-left: solid 1px"></td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center; border-left: solid 1px;">Crossfade</td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center;">Cut/Paste</td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center;">Overlap/Add</td>
+            </tr>
+            <tr>
+              <th style="border: solid 1px; text-align:center; padding-right:8px;">Bona fide</th> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"><a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev-clean_2086_149214_000005_000001.wav"></audio>► Play</a> <span style="font-size:8px; font-family: Monaco, monospace;"> 2086_149214_000005_000001.wav</span></td>
+            </tr>
+
+            <tr>
+              <th class="overflow">LJ JET<sup>a</sup></th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-full_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cf_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cp_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-oa_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="overflow">YourTTS</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-full_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-cf_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-cp_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-oa_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">XTTS v2</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-full_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-cf_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-cp_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-oa_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="overflow">GPT-SoVITS</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-full_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-cf_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-cp_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-oa_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">Cosy Voice</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-full_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-cf_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-cp_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-oa_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">ElevenLab</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-full_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-cf_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-cp_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-oa_2086_149214_000005_000001.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+          </tbody></table>
+          <br>
+          <br>
+        </div>
+      </div>
+
+     <div class="row">
+        <div class="col-md-6 sample-entry">
+          <p></p>
+          <div class="textboard" width=100%>
+            <p><b>SOURCE:</b>
+            <p>•THE•WORSHIP•••OF•THE•GREAT•••MYSTERY•WAS•SILENT•••SOLITARY•FREE•••FROM•ALL•SELF•••••SEEKING•
+            <p><b class=highlight>TARGET:</b>
+            <p>•THE•<span class=highlight>REVERENCE</span>•OF•THE•<span class=highlight>ANCIENT•ENIGMA</span>••WAS•<span class=highlight>TRANQUIL•ISOLATED•PURGED•OF</span>•••ALL•<span class=highlight>EGOISTIC•DESIRES</span>•
+          </div>
+          <table border="1">
+            <tbody><tr>
+              <th style="width: 120px; font-weight: normal">Male (5536)</th>
+              <th style="background-color: #FF7F0E; text-align: center; border-left: solid 1px">Fully Fake</th>
+              <th style="background-color: #FF7F0E; text-align: center; border-left: solid 1px;" colspan="3">Partially Fake</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center; border-left: solid 1px"></td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center; border-left: solid 1px;">Crossfade</td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center;">Cut/Paste</td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center;">Overlap/Add</td>
+            </tr>
+            <tr>
+              <th style="border: solid 1px; text-align:center; padding-right:8px;">Bona fide</th> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"><a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev-clean_5536_43358_000011_000000.wav"></audio>► Play</a> <span style="font-size:8px; font-family: Monaco, monospace;"> 5536_43358_000011_000000.wav</span></td>
+            </tr>
+
+            <tr>
+              <th class="overflow">LJ JET<sup>a</sup></th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-full_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cf_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cp_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-oa_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="overflow">YourTTS</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-full_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-cf_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-cp_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-oa_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">XTTS v2</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-full_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-cf_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-cp_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-oa_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="overflow">GPT-SoVITS</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-full_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-cf_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-cp_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-oa_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">Cosy Voice</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-full_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-cf_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-cp_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-oa_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">ElevenLab</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-full_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-cf_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-cp_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-oa_5536_43358_000011_000000.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+          </tbody></table>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-6 sample-entry">
+          <p></p>
+          <div class="textboard" width=100%>
+            <p><b>SOURCE:</b>
+            <p>•AS•SOON•AS•IT•WAS•ENDED•THEY•PROCEEDED•TO•OVERHAUL•MY•SWAG•AND•THE•CONTENTS•OF•MY•POCKETS•
+            <p><b class=highlight>TARGET:</b>
+            <p>•AS•SOON•AS•IT•••••<span class=highlight>BEGAN</span>•THEY•<span class=highlight>FAILED</span>••••TO•<span class=highlight>TOUCH</span>••••MY•SWAG•<span class=highlight>OR</span>••THE•CONTENTS•OF•MY•POCKETS•
+          </div>
+          <table border="1">
+            <tbody><tr>
+              <th style="width: 120px; font-weight: normal">Female (2412)</th>
+              <th style="background-color: #FF7F0E; text-align: center; border-left: solid 1px">Fully Fake</th>
+              <th style="background-color: #FF7F0E; text-align: center; border-left: solid 1px;" colspan="3">Partially Fake</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center; border-left: solid 1px"></td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center; border-left: solid 1px;">Crossfade</td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center;">Cut/Paste</td>
+              <td style="width: 100px; background-color: #FF7F0E; text-align: center;">Overlap/Add</td>
+            </tr>
+            <tr>
+              <th style="border: solid 1px; text-align:center; padding-right:8px;">Bona fide</th> 
+              <td style="border: solid 1px; text-align:left;" colspan="4"><a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev-clean_2412_153954_000008_000009.wav"></audio>► Play</a> <span style="font-size:8px; font-family: Monaco, monospace;"> 2412_153954_000008_000009.wav</span></td>
+            </tr>
+
+            <tr>
+              <th class="overflow">LJ JET<sup>a</sup></th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-full_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cf_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cp_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-oa_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="overflow">YourTTS</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-full_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-cf_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-cp_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-yourtts-partial-oa_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">XTTS v2</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-full_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-cf_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-cp_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-xttsv2-partial-oa_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="overflow">GPT-SoVITS</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-full_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-cf_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-cp_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-gptsovits-partial-oa_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">Cosy Voice</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-full_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-cf_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-cp_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-cosyvoice-partial-oa_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th class="overflow">ElevenLab</th>
+              <td style="border: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-full_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="border-left: solid 1px; width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-cf_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-cp_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+              <td style="width: 100px">
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-elevenlab-partial-oa_2412_153954_000008_000009.wav"></audio>► Play</a>
+              </td>
+            </tr>
+
+          </tbody></table>
+          <br>
+          <br>
+        </div>
+      </div>
+
+    </div>
+    <p>
+
+
+
+<row>
+    </row></p><p style="padding-bottom: 32px; visibility: hidden">asdasdas</p>
+    <p></p>
+  
+
+
+    </div>
+  
+
+
+
+
+</body></html>
