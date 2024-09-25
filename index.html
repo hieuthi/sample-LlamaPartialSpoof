@@ -92,6 +92,10 @@
       .highlight {
         color: blue;
       }
+      .footnote p {
+        margin-bottom: 0;
+        font-size: 10px;
+      }
 
     </style>
     <script>
@@ -115,14 +119,17 @@
       <div class="col-md-12">
         <row>
           <h1>Speech Samples for <b>LlamaPartialSpoof</b> Dataset</h1>
-          <h4><a href="https://github.com/hieuthi/LlamaPartialSpoof">🏠 Project Homepage</a> | 📄 Preprint (coming soon)</h4>
+          <h4><a href="https://github.com/hieuthi/LlamaPartialSpoof">🏠 Project Homepage</a> | <a href="https://arxiv.org/abs/2409.14743">📄 Preprint</a></h4>
         </row>
       </div>
       <div class="col-md-12">
 
       <h2>Fully and partially fake speech generated with text-to-speech systems</h2>
       <p>We use 3-7 seconds (or five utterances) of the target speaker to clone their voice, then generate fully fake utterances. Partially fake utterances were created by combining the bona fide and the fully fake.
-      <p><sup>a</sup><b>LJ JET</b> is not a voice-cloning system but a single-speaker TTS model with the voice of a female speaker. </p>
+      <div class="footnote">
+        <p>*Loudness were normalized for demonstration purposes
+        <p><sup>a</sup><b>LJ JETS</b> is not a voice-cloning system but a single-speaker TTS model with the voice of a female speaker. </p>
+      </div>
       <div class="row">
         <div class="col-md-6 sample-entry">
           <p></p>
@@ -151,18 +158,18 @@
             </tr>
 
             <tr>
-              <th class="overflow">LJ JET<sup>a</sup></th>
+              <th class="overflow">LJ JETS<sup>a</sup></th>
               <td style="border: solid 1px; width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-full_84_121123_000050_000005.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-full_84_121123_000050_000005.wav"></audio>► Play</a>
               </td>
               <td style="border-left: solid 1px; width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cf_84_121123_000050_000005.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-cf_84_121123_000050_000005.wav"></audio>► Play</a>
               </td>
               <td style="width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cp_84_121123_000050_000005.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-cp_84_121123_000050_000005.wav"></audio>► Play</a>
               </td>
               <td style="width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-oa_84_121123_000050_000005.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-oa_84_121123_000050_000005.wav"></audio>► Play</a>
               </td>
             </tr>
 
@@ -280,18 +287,18 @@
             </tr>
 
             <tr>
-              <th class="overflow">LJ JET<sup>a</sup></th>
+              <th class="overflow">LJ JETS<sup>a</sup></th>
               <td style="border: solid 1px; width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-full_2086_149214_000005_000001.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-full_2086_149214_000005_000001.wav"></audio>► Play</a>
               </td>
               <td style="border-left: solid 1px; width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cf_2086_149214_000005_000001.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-cf_2086_149214_000005_000001.wav"></audio>► Play</a>
               </td>
               <td style="width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cp_2086_149214_000005_000001.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-cp_2086_149214_000005_000001.wav"></audio>► Play</a>
               </td>
               <td style="width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-oa_2086_149214_000005_000001.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-oa_2086_149214_000005_000001.wav"></audio>► Play</a>
               </td>
             </tr>
 
@@ -412,18 +419,18 @@
             </tr>
 
             <tr>
-              <th class="overflow">LJ JET<sup>a</sup></th>
+              <th class="overflow">LJ JETS<sup>a</sup></th>
               <td style="border: solid 1px; width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-full_5536_43358_000011_000000.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-full_5536_43358_000011_000000.wav"></audio>► Play</a>
               </td>
               <td style="border-left: solid 1px; width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cf_5536_43358_000011_000000.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-cf_5536_43358_000011_000000.wav"></audio>► Play</a>
               </td>
               <td style="width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cp_5536_43358_000011_000000.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-cp_5536_43358_000011_000000.wav"></audio>► Play</a>
               </td>
               <td style="width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-oa_5536_43358_000011_000000.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-oa_5536_43358_000011_000000.wav"></audio>► Play</a>
               </td>
             </tr>
 
@@ -541,18 +548,18 @@
             </tr>
 
             <tr>
-              <th class="overflow">LJ JET<sup>a</sup></th>
+              <th class="overflow">LJ JETS<sup>a</sup></th>
               <td style="border: solid 1px; width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-full_2412_153954_000008_000009.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-full_2412_153954_000008_000009.wav"></audio>► Play</a>
               </td>
               <td style="border-left: solid 1px; width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cf_2412_153954_000008_000009.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-cf_2412_153954_000008_000009.wav"></audio>► Play</a>
               </td>
               <td style="width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-cp_2412_153954_000008_000009.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-cp_2412_153954_000008_000009.wav"></audio>► Play</a>
               </td>
               <td style="width: 100px">
-                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjet-partial-oa_2412_153954_000008_000009.wav"></audio>► Play</a>
+                <a onclick="play(this.firstChild)" class="play-btn"><audio onended="onEnd(this)"><source src="wav/dev01-ljjets-partial-oa_2412_153954_000008_000009.wav"></audio>► Play</a>
               </td>
             </tr>
 
